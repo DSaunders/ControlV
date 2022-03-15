@@ -2,7 +2,7 @@
 
 Handy utilities for your clipboard content.
 
-Just run `cv` from the command line, to automatically detect what's on the clipboard and perform an action.
+Just run `cv` from the command line, to automatically detect what's on the clipboard and perform an action on the contents.
 
 For example, to automatically format a JSON string on the clipboard:
 
@@ -20,3 +20,5 @@ Proposed actions:
 - (un)escape JSON
 - Create C# classes from JSON
 - Markdown to HTML conversion
+- Image compression
+- Image type conversion
