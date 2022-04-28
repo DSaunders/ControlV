@@ -21,6 +21,13 @@ namespace ControlV
             Console.WriteLine("Scanning clipboard contents..");
 
             var text = await ClipboardService.GetTextAsync();
+            if (string.IsNullOrEmpty(text))
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("The clipboard is empty");
+                Console.ForegroundColor = originalColour;
+                return;
+            }
 
             var actions = new List<IAction>();
 
